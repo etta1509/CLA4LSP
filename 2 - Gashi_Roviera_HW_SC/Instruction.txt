@@ -1,0 +1,39 @@
+This document delineates the organisation of the files in the homework folder and the process of importing them into MATLAB to replicate the results presented in the report. It is to be noted that the MATLAB **Statistics and Machine Learning Toolbox** is a prerequisite for executing the scripts.
+
+- *Report*: A PDF report containing the description of the solution approach adopted for the homework and its results.
+
+The folder containing the files for the replication of the results is structured in three sub-folders: *Datasets*, *Scripts*, and *Results*.
+
+1. *Datasets*: This folder contains the datasets in the .mat format and the files necessary for generating the two additional datasets relating to the optional points. The files present are:
+	a. Circle.mat: The first analysed dataset.
+	b. Spiral.mat: The second analysed dataset.
+	c. 3d_objects.mat: The third analysed dataset.
+	d. 3d_sphere_cube.mat: The fourth analysed dataset.
+	e. datasets_generation: contains the code to generate the 3d_objects and 3d_sphere_cube datasets.
+
+2. *Scripts*: This folder contains all files in .mlx or .m format required to run the code. These files are listed below:
+	a. invpower_method.m: This file contains the function for calculating the minimum eigenvalue and corresponding eigenvector of a given matrix using the inverse power method. A description of the input and output parameters is given directly in the file.
+	b. deflation_method.m: This file contains the function for calculating the M minimum eigenvalues and eigenvectors of a symmetric matrix, with a description of the input and output parameters given directly in the file.
+	c. knn_graph.m: This file contains the function for calculating the W adjacency matrix based on the k-NN (k-Nearest Neighbours). A description of the input and output parameters is given directly in the file.
+	d. The file *hw2_main_circle.mlx* is a Live Script format file for the Circle dataset with value of k = 10. This code was used to generate PDFs containing results with k = 10, k = 20 and k = 40.
+	e. The file *hw2_main_spiral.mlx* is a Live Script format file for the Spiral dataset with value of k = 10. This code was used to generate the PDFs containing the results with k = 10, k = 20 and k = 40.
+	f. The file *hw2_main_3d_objects.mlx* is a Live Script format file for the 3D_Objects dataset with value of k = 10. This code was used to generate the PDFs containing the results with k = 10, k = 20 and k = 40.
+	g. The file *hw2_main_3d_sphere_cube.mlx* is a Live Script format file for the 3D_Sphere_Cube dataset with value of k = 10. This code was used to generate the PDFs containing the results with k = 10, k = 20 and k = 40.
+
+3. *Results*: The third folder contains the PDFs with the results of the execution of the scripts for each dataset and for each value of k. These results are divided into four subfolders, as outlined below:
+	a. Circle dataset: This subfolder contains the following files:
+		* Circle_dataset_k=10.pdf: Script for the dataset with k = 10.
+		* Circle_dataset_k=20.pdf: Script for the dataset with k = 20.
+		* Circle_dataset_k=40.pdf: Script for the dataset with k = 40.
+	b. Spiral dataset: This subfolder contains the following files:
+		* Spiral_dataset_k=10.pdf: Script for the dataset with k = 10.
+		* Spiral_dataset_k=20.pdf: Script for the dataset with k = 20.
+		* Spiral_dataset_k=40.pdf: Script for the dataset with k = 40.
+	c. 3d_objects dataset: This subfolder contains the following files:
+		* 3d_objects_dataset_k=10.pdf: Script for the dataset with k = 10.
+		* 3d_objects_dataset_k=20.pdf: Script for the dataset with k = 20.
+		* 3d_objects_dataset_k=40.pdf: Script for the dataset with k = 40.
+	d. 3d_sphere_cube dataset: This subfolder contains the following files:
+		* 3d_sphere_cube_dataset_k=10.pdf: Script for the dataset with k = 10.
+		* 3d_sphere_cube_dataset_k=20.pdf: Script for the dataset with k = 20.
+		* 3d_sphere_cube_dataset_k=40.pdf: Script for the dataset with k = 40.
